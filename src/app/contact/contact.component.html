@@ -1,0 +1,12 @@
+<div *ngFor="let contact of contactList">
+  <mat-card>
+    <mat-card-title>{{contact.fName}} {{contact.lName}}</mat-card-title>
+    <mat-card-subtitle>{{contact.phoneNumber}}</mat-card-subtitle>
+    {{contact.email}}
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" (click)="editButtonClicked(contact.id)">Edit</button>
+      <button mat-raised-button color="warn" (click)="DeleteContact(contact.id)">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+  <br><br>
+</div>

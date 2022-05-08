@@ -1,0 +1,14 @@
+<div class="form">
+    <mat-card >
+        <p>First Name:   <input [(ngModel)]="firstName" type="text" required></p>
+        <p>Last Name:    <input [(ngModel)]="lastName" type="text"  required></p>
+        <p>Phone Number: <input [(ngModel)]="phoneNumber" type="text"  required></p>
+        <p>Email:        <input  [(ngModel)]="emailAddress"type="text"  required></p>
+        <br>
+        <mat-card-actions align="end">
+            <button mat-raised-button color="primary" (click)="AddContact()"> Add</button>
+            <button mat-raised-button color="accent" (click)="Clear()">Clear</button>
+            <button mat-raised-button color="warn" (click)="Cancel()">Cancel</button>
+          </mat-card-actions>
+    </mat-card>
+</div>
